@@ -13,7 +13,7 @@ const contactRouter = require('./routes/contact')
 const connetcDB = async () => {
     try
     {
-        await mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD }@doanweb.aco1i0s.mongodb.net/?retryWrites=true&w=majority`,
+        await mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD }@...link...,
         {
             useNewUrlParser: true
         })
