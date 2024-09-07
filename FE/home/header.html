@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="responsive.css">
+<header id="header">
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo">
+        <img src="images/logo.png" alt="" class="logo-img" >
+        <p>
+            <span>R</span>yokou
+        </p>
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="tour.html">tour</a>
+        <a href="specialties.html">specialties</a>
+        <a href="hotel.html">hotel</a>
+        <a href="Blog.html">blog</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <a id="login-btn" class="show" href="../login/login.html"><i class="fas fa-user" ></i></a>
+        <p id="loged-btn" class="hide username"></p>
+        <a onclick="logOut()" id="logout-btn" class="hide" ><i class="fas fa-times" ></i></a>
+        <a onclick="Info()" id="info-btn" class="hide" href="../home/info-user.html"><i class="fas fa-user" ></i></a>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="Tìm kiếm...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+</header>
+<script src="header.js"></script>

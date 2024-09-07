@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        .book-tour-container{
+            width: 100%;    
+            margin: 0 auto;
+            border: 1px solid #000;
+            padding: 15px;
+        }
+
+        .book-tour-detail{
+            display: flex;
+        }
+        
+        .book-tour-title{
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        
+        .book-tour-img{
+            height: 75%;
+            width: 75%;
+            float: left;
+            flex: 2;
+        }
+
+        .book-tour-img img{
+            max-width: 100%;
+            padding: 5px;
+            border: 1px solid #000;
+            background: #eee;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .book-tour-infor{
+            float: right;
+            width: 70%;
+            text-align: left;
+            padding-left: 30px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1{
+            font-size: 3.5rem;
+        }
+
+        .book-tour-infor .price{
+            font-size: 2rem;
+            color: #333;
+            padding-top: 1rem;
+            flex: 1;
+        }
+
+        .book-tour-infor .price span{
+            color: #666;
+            font-size: 1.5rem;
+            text-decoration: line-through;
+        }
+
+        .book-tour-infor .price label{
+            color: red;
+        }
+
+        #gallery{
+            margin-top: 20px;
+            flex: 1;
+        }
+
+        #gallery ul{
+            margin: 0;
+            padding: 0;
+        }
+
+        #gallery ul li{
+            width: 150px;
+            float: left;
+            list-style: none;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            height: 100px;
+            text-align: center;
+            padding: 5px;
+            border: 1px solid #000;
+            background: #eee;
+        }
+        
+        #gallery ul li img{
+            max-width: 100%;
+            max-height: 100%;
+            vertical-align: middle;
+        }
+
+        .book-tour-infor a{
+            text-align: center;
+
+        }
+
+        .indent{
+            text-indent: 20px;
+            font-size: 1.6rem;
+            margin-top: 15px;
+        }
+
+        .contact{
+            margin-top: 20px;
+        }
+
+        .contact .contact-social-network{
+            font-size: 2rem;
+            color: black;
+        }
+
+        .contact .contact-social-network .fa-brands{
+            color: #000;
+            margin-right: 20px;
+            
+        }
+
+        .contact .contact-box{
+            margin-top: 10px;
+            font-size: 1.8rem;
+        }
+        .contact .contact-box .contact-email{
+            text-transform: none;
+        }
+    </style>
+    <div class="book-tour-container">
+        <p class="book-tour-title">Chi tiết tour</p>
+        <div class="book-tour-detail">
+            <div class="book-tour-img">
+                <a id="hreftour"><img id="imagetour" alt=""></a>
+            </div>
+            <div class="book-tour-infor">
+                <h1 id="tourname">JW Marriott Hà Nội</h1>
+                <div class="price"> Giá:<label id="giaban"> 4.780.000 VND </label> <span id="giagoc"> 5.850.000 VND</span> 
+                    <div class="contact">
+                        <p>Liên hệ với chúng tôi tại:</p>  
+                        <div class="contact-social-network">                       
+                            <a href=""><i class="fa-brands fa-facebook" style="color: rgb(16,147,244);"></i></a>
+                            <a href=""> <i class="fa-brands fa-instagram" style="background-image: linear-gradient(#002aff,#ee2a7b,#f9ed32);"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter" style="color: rgb(29,155,240);"></i></a>
+                            <a href=""><i class="fa-brands fa-youtube" style="color: red;"></i></a>
+                        </div>
+                        <div class="contact-box">
+                            <div class="contact-phone">
+                            <i class="fa-solid fa-phone"></i> Hotline: 0123456789.
+                            </div>
+                            <div class="contact-email">
+                            <i class="fa-regular fa-envelope"></i> Email: 20521313@gm.uit.edu.vn.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="gallery">
+                    <ul>                
+                        <a id ="hpic1"><li><img id ="ipic1" height="100" width="100"></li></a>
+                        <a id ="hpic2"><li><img id ="ipic2" height="100" width="100"></li></a>
+                        <a id ="hpic3"><li><img id ="ipic3" height="100" width="100"></li></a>
+                        <a id ="hpic4"><li><img id ="ipic4" height="100" width="100"></li></a>
+                    </ul>
+                </div>
+                <a href="book.html" class="btn">Đặt ngay</a>
+                <a href="tour.html" class="btn">    
+                    <span class="btn-icon">
+                        back
+                    </span>
+                </a>
+            </div>
+        </div>
+        <p class="indent" id="infotour">hahaha</p>
+    </div>
+
+</body>
+<script src="book-tour.js"></script>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="header"></div>
+    <!-- Đặc chyến -->
+    <section class="book" id="book">
+
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+    
+        <div class="row">
+    
+            <div class="image">
+                <img src="images/book-img.svg" alt="">
+            </div>
+    
+            <form action="">
+                <div class="inputBox">
+                    <h3 id="tourname">Tour</h3>
+                    <input id="price" type="text" placeholder="price" readonly>
+                </div>
+                <div class="inputBox">
+                    <h3>Số người</h3>
+                    <input id="totalpeson" type="number" placeholder="Số người tham gia">
+                </div>
+                <div class="inputBox">
+                    <h3>Năm Đi</h3>
+                    <input id="touryear" type="number" placeholder="Số người tham gia">
+                </div>
+                <div class="inputBox">
+                    <h3>Tháng Đi</h3>
+                    <input id="tourmonth" type="number" placeholder="Số người tham gia">
+                </div>
+                <div class="inputBox">
+                    <h3>Ngày Đi</h3>
+                    <input id="tourday" type="text" placeholder="Hãy chọn ngày đi" readonly>
+                    <div class="options">
+                      <button id="dauthang">Ngày 1 đến ngày 7</button>
+                      <button id="giuathang">Ngày 10 đến ngày 17</button> 
+                      <button id="cuoithang">Ngày 20 đến ngày 27</button>
+                    </div>
+                </div>
+                <input id="btnbook" class="btn" value="book now">
+               <a href="tour.html" class="btn">    
+                <span class="btn-icon">
+                    back
+                </span>
+               </a>
+            </form>
+    
+        </div>
+        <nav aria-label="Page navigation example" class="pagination">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+    </section> 
+</body>
+<script src="script.js"></script>
+<script src="book.js"></script>
+</html>

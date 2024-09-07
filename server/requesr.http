@@ -1,0 +1,135 @@
+
+#### --------------------------Login and Register -------+++++++++++++++++++++++
+
+POST http://localhost:5001/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "truong",
+    "password": "truong"
+}
+###
+POST http://localhost:5001/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "truong",
+    "password": "truong" 
+}
+
+### ---------------------------tour----------
+POST http://localhost:5001/api/tours/post
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTZiZGVmNTYyMzFlODhkMmIxNTUxMTEiLCJpYXQiOjE3MDI5NDkxODB9.sYgyxjzAu8jBnPr9TOLCUeRRLQ5-1Vt82Bt7HKpmVbc
+
+{
+    "tourname": "Phú Quốc Tour",
+    "price_G": "7.500.000 VND",
+    "price_B": "6.500.000 VND",
+    "pic": "images/phú quốc.jpg",
+    "pic1": "images/pq1.jpg",
+    "pic2": "images/pq2.jpg",
+    "pic3": "images/pq3.jpg",
+    "pic4": "images/pq4.jpg",
+    "intro": "Giữa tháng 5, website du lịch lớn nhất thế giới <em>TripAdvisor</em> công bố các giải thưởng do người dùng bình chọn - <strong>Travelers' Choice Awards 2021 Best of the Best</strong>. Giải thưởng được tổ chức hằng năm để tôn vinh các điểm lưu trú, điểm tham quan và nhà hàng với chất lượng dịch vụ xuất sắc dựa trên đánh giá từ hàng triệu du khách trên khắp thế giới. Trong đó có bảng xếp hạng và chọn top khách sạn tốt nhất năm theo khu vực từ toàn thế giới, từng châu lục cho tới từng nước."
+}
+
+###
+POST http://localhost:5001/api/tours/get
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTZiZGVmNTYyMzFlODhkMmIxNTUxMTEiLCJpYXQiOjE3MDI5NDkxODB9.sYgyxjzAu8jBnPr9TOLCUeRRLQ5-1Vt82Bt7HKpmVbc
+
+{
+    "tourname": "Hà Giang Tour"
+}
+
+###
+PUT http://localhost:5001/api/tours/put
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTZiZGVmNTYyMzFlODhkMmIxNTUxMTEiLCJpYXQiOjE3MDI5NDkxODB9.sYgyxjzAu8jBnPr9TOLCUeRRLQ5-1Vt82Bt7HKpmVbc
+
+{
+    "tourname": "Hà Giang Tour",
+    "price_G": "7.000.000 VND",
+    "price_B": "6.000.000 VND",
+    "pic": "images/hà giang.jpg",
+    "pic1": "images/hg1.jpg",
+    "pic2": "images/hg2.jpg",
+    "pic3": "images/hg3.jpg",
+    "pic4": "images/hg4.jpg",
+    //"intro": "Giữa tháng 5, website du lịch lớn nhất thế giới TripAdvisor công bố các giải thưởng do người dùng bình chọn -Travelers' Choice Awards 2021 Best of the Best-. Giải thưởng được tổ chức hằng năm để tôn vinh các điểm lưu trú, điểm tham quan và nhà hàng với chất lượng dịch vụ xuất sắc dựa trên đánh giá từ hàng triệu du khách trên khắp thế giới. Trong đó có bảng xếp hạng và chọn top khách sạn tốt nhất năm theo khu vực từ toàn thế giới, từng châu lục cho tới từng nước."
+    "intro": "Giữa tháng 5, website du lịch lớn nhất thế giới <em>TripAdvisor</em> công bố các giải thưởng do người dùng bình chọn - <strong>Travelers' Choice Awards 2021 Best of the Best</strong>. Giải thưởng được tổ chức hằng năm để tôn vinh các điểm lưu trú, điểm tham quan và nhà hàng với chất lượng dịch vụ xuất sắc dựa trên đánh giá từ hàng triệu du khách trên khắp thế giới. Trong đó có bảng xếp hạng và chọn top khách sạn tốt nhất năm theo khu vực từ toàn thế giới, từng châu lục cho tới từng nước."
+}
+
+### -------------------- Info ------------------------
+GET http://localhost:5001/api/userinfos/person
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTZiZGVmNTYyMzFlODhkMmIxNTUxMTEiLCJpYXQiOjE3MDI4ODYxNzV9._JS51b3J73BG7P-c_8NAYHYJcaX1QjPqesRqKI-rzOo
+
+###
+POST http://localhost:5001/api/userinfos/post
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTgwM2NlOWExOWYzMWQ3MDA5NmM4NWIiLCJpYXQiOjE3MDMwODMyMDd9.1ciQVyOPI-YWjd_RvRVqRyLNOmoys_AM1LP3C4ivdrw
+
+{
+    "permission": "quanly",
+    "fullname": "Trương Văn Hiệp", 
+    "phonenumber":"0633225588", 
+    "email":"hiep@gmail.com",
+    "address": "ktx khu a"
+}
+
+###
+PUT http://localhost:5001/api/userinfos/put
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTZiZGVmNTYyMzFlODhkMmIxNTUxMTEiLCJpYXQiOjE3MDM3NTM1NzB9.xajple1S-Pxk3CkxCj2QdGpLQCv2aJsd9X09aX39iLU
+
+{
+
+    "fullname": "Đoàn Đỗ Lâm Trường", 
+    "phonenumber":"0223366558", 
+    "email":"truong@gmail.comm",
+    "address": "ktx khu a - TQB"
+}
+
+### -------------------- BookTour ------------------------
+GET http://localhost:5001/api/booktours/getlist
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTZiZGVmNTYyMzFlODhkMmIxNTUxMTEiLCJpYXQiOjE3MDMwODIyMjd9.-9okcL_TgCVmVCva_ysqINDcCUnDu7v2SIRqmJcqBsw
+
+###
+POST http://localhost:5001/api/booktours/getone
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTZiZGVmNTYyMzFlODhkMmIxNTUxMTEiLCJpYXQiOjE3MDMwODIyMjd9.-9okcL_TgCVmVCva_ysqINDcCUnDu7v2SIRqmJcqBsw
+
+{
+    "idboooktour": "65832d7d9437eaee1b04ca48"
+}
+
+###
+POST http://localhost:5001/api/userinfos
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTZiZGVmNTYyMzFlODhkMmIxNTUxMTEiLCJpYXQiOjE3MDI4OTM0MDh9.EgvfiGjwg4PEhU-NuY2CSFl-4btDFt9gQw16IoqlagU
+
+{
+    "tourname": "tourname", 
+    "price": "price", 
+    "tourday": "tourday", 
+    "tourmonth": "tourmonth" , 
+    "touryear": "touryear",
+    "personnamebook": "personnamebook",
+    "personemailbook": "personemailbook",
+    "personphonebook": "personphonebook",
+    "tour_id": "tour_id"   
+}
+
+### -------------------- Contact ------------------------
+GET http://localhost:5001/api/contacts/getlist
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTZiZGVmNTYyMzFlODhkMmIxNTUxMTEiLCJpYXQiOjE3MDMwODIyMjd9.-9okcL_TgCVmVCva_ysqINDcCUnDu7v2SIRqmJcqBsw
+
+###
+POST http://localhost:5001/api/contacts/getone
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTZiZGVmNTYyMzFlODhkMmIxNTUxMTEiLCJpYXQiOjE3MDMwODIyMjd9.-9okcL_TgCVmVCva_ysqINDcCUnDu7v2SIRqmJcqBsw
+
+{
+    "idcontact": "658348eab5169deca77fd585"
+}

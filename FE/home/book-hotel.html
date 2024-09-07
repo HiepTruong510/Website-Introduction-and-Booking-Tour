@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        .book-hotel-container{
+            width: 100%;    
+            margin: 0 auto;
+            border: 1px solid #000;
+            padding: 15px;
+        }
+
+        .book-hotel-detail{
+            display: flex;
+        }
+        
+        .book-hotel-title{
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        
+        .book-hotel-img{
+            height: 75%;
+            width: 75%;
+            float: left;
+            flex: 2;
+        }
+
+        .book-hotel-img img{
+            max-width: 100%;
+            padding: 5px;
+            border: 1px solid #000;
+            background: #eee;
+        }
+
+        .book-hotel-infor{
+            float: right;
+            width: 70%;
+            text-align: left;
+            padding-left: 30px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1{
+            font-size: 3.5rem;
+        }
+
+        .book-hotel-infor .price{
+            font-size: 2rem;
+            color: #333;
+            padding-top: 1rem;
+            flex: 1;
+        }
+
+        .book-hotel-infor .price span{
+            color: #666;
+            font-size: 1.5rem;
+            text-decoration: line-through;
+        }
+
+        .book-hotel-infor .price label{
+            color: red;
+        }
+
+        #gallery{
+            margin-top: 20px;
+            flex: 1;
+        }
+
+        #gallery ul{
+            margin: 0;
+            padding: 0;
+        }
+
+        #gallery ul li{
+            width: 150px;
+            float: left;
+            list-style: none;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            height: 100px;
+            text-align: center;
+            padding: 5px;
+            border: 1px solid #000;
+            background: #eee;
+        }
+        
+        #gallery ul li img{
+            max-width: 100%;
+            max-height: 100%;
+            vertical-align: middle;
+        }
+
+        .book-hotel-infor a{
+            text-align: center;
+
+        }
+
+        .indent{
+            text-indent: 20px;
+            font-size: 1.6rem;
+            margin-top: 15px;
+        }
+
+        .contact{
+            margin-top: 20px;
+        }
+
+        .contact .contact-social-network{
+            font-size: 2rem;
+            color: black;
+        }
+
+        .contact .contact-social-network .fa-brands{
+            color: #000;
+            margin-right: 20px;
+            
+        }
+
+        .contact .contact-box{
+            margin-top: 10px;
+            font-size: 1.8rem;
+        }
+        .contact .contact-box .contact-email{
+            text-transform: none;
+        }
+    </style>
+    <div class="book-hotel-container">
+        <p class="book-hotel-title">Chi tiết khách sạn</p>
+        <div class="book-hotel-detail">
+            <div class="book-hotel-img">
+                <a href="images/JW Marriott Hà Nội.jpg"><img src="images/JW Marriott Hà Nội.jpg" alt=""></a>
+            </div>
+            <div class="book-hotel-infor">
+                <h1>JW Marriott Hà Nội</h1>
+                <div class="price"> Giá:<label> 4.780.000 VND </label> <span> 5.850.000 VND</span> 
+                    <div class="contact">
+                        <p>Liên hệ với chúng tôi tại:</p>  
+                        <div class="contact-social-network">                       
+                            <a href=""><i class="fa-brands fa-facebook" style="color: rgb(16,147,244);"></i></a>
+                            <a href=""> <i class="fa-brands fa-instagram" style="background-image: linear-gradient(#002aff,#ee2a7b,#f9ed32);"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter" style="color: rgb(29,155,240);"></i></a>
+                            <a href=""><i class="fa-brands fa-youtube" style="color: red;"></i></a>
+                        </div>
+                        <div class="contact-box">
+                            <div class="contact-phone">
+                            <i class="fa-solid fa-phone"></i> Hotline: 0123456789.
+                            </div>
+                            <div class="contact-email">
+                            <i class="fa-regular fa-envelope"></i> Email: 20521313@gm.uit.edu.vn.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="gallery">
+                    <ul>                
+                        <a href="images/hg1.jpg"><li><img src="images/jw-1.png" height="100" width="100"></li></a>
+                        <a href="images/hg2.jpg"><li><img src="images/jw-2.jpg" height="100" width="100"></li></a>
+                        <a href="images/hg3.jpg"><li><img src="images/jw-3.png" height="100" width="100"></li></a>
+                        <a href="images/hg4.jpg"><li><img src="images/jw-4.jpg" height="100" width="100"></li></a>
+                    </ul>
+                </div>
+                <a href="#" class="btn">Đặt ngay</a>
+                <a href="index.html" class="btn">    
+                    <span class="btn-icon">
+                        back
+                    </span>
+                </a>
+            </div>
+        </div>
+        <p class="indent" >Giữa tháng 5, website du lịch lớn nhất thế giới <em>TripAdvisor</em> công bố các giải thưởng do người dùng bình chọn - <strong>Travelers' Choice Awards 2021 Best of the Best</strong>. Giải thưởng được tổ chức hằng năm để tôn vinh các điểm lưu trú, điểm tham quan và nhà hàng với chất lượng dịch vụ xuất sắc dựa trên đánh giá từ hàng triệu du khách trên khắp thế giới.
+            Trong đó có bảng xếp hạng và chọn top khách sạn tốt nhất năm theo khu vực từ toàn thế giới, từng châu lục cho tới từng nước.</p>
+        <p class="indent"> Tại Việt Nam, đứng đầu là JW Marriott Hà Nội. Khách sạn nằm trên đường Đỗ Đức Dục, quận Nam Từ Liêm, đi vào hoạt động năm 2013 với 450 phòng. Nơi đây từng là nơi nghỉ của cựu Tổng thống Mỹ Barack Obama trong chuyến thăm chính thức Việt Nam năm 2016.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+.reg-form{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    min-height: 100vh;
+    width: 100%;
+    background:rgba(0,0,0,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.reg-form form{
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    background:#fff;
+    width: 30rem;
+    height: 35rem;
+}
+  
+.reg-form form h3{
+    font-size: 2.5rem;
+    color:#444;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0;
+}
+  
+  .reg-form form .box{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color:#333;
+    margin: 0.6rem 0;
+    border: 0.1rem solid rgba(0,0,0,.3);
+    text-transform: none;
+  }
+  
+  .reg-form form .box:focus{
+    border-color: #ffa500;
+  }
+  
+  .reg-form form #remember{
+    margin: 2rem 0;
+  }
+  
+  .reg-form form label{
+    font-size: 1.2rem;
+  }
+  
+  .reg-form form .btn{
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    background: #ffa500;
+    color:#fff;
+    padding: 0.8rem 3rem;
+    border:.2rem solid #ffa500;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  .reg-form form .btn:hover{
+    background:rgba(255, 165, 0, 0.2);
+    color: #ffa500;
+  }
+
+  .reg-form form p,.reg-form form label{
+    padding:.5rem 0;
+    font-size: 1.2rem;
+    color:#666;
+  }
+  
+  .reg-form form p a,.reg-form form label a{
+    color: #ffa500;
+  }
+  
+  .reg-form form p a:hover{
+    color:#333;
+    text-decoration: underline;
+  }
+  
+  .reg-form #form-close{
+    position: absolute;
+    top: 2rem; 
+    right: 3rem;
+    font-size: 2rem;
+    z-index: 4;
+    color:#fff;
+    cursor: pointer;
+  }
