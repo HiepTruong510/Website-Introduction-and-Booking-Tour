@@ -4,15 +4,15 @@
 This is a website for introducing and booking tours developed on vscode, this website uses MongoDB as a database, API is written in JavaScript on Node.js platform. The website interface is created with html, css, reactjs, bootstrap,..
 
 **Features**  
--- user --
-Booking Tour
-Booking Hotel
-Introducing specialties
-Introducing tourist attractions
--- admin --
-Booking Tour Management
-Booking Hotel Management
-Update prices and news
+-- user --  
+Booking Tour  
+Booking Hotel  
+Introducing specialties  
+Introducing tourist attractions  
+-- admin --  
+Booking Tour Management  
+Booking Hotel Management  
+Update prices and news  
 
 **Setting**  
 Request: 
